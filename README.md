@@ -1,5 +1,7 @@
 # surveyusers
 
+A Simple API to show off a little practice of Python Django
+
 - download and install python (add it to path)
   https://www.python.org/downloads/
 
