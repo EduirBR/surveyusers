@@ -1,15 +1,19 @@
 # surveyusers
 
-+ download python in: https://www.python.org/downloads/release/python-3110/
+- download and install python (add it to path)
+  https://www.python.org/downloads/
 
-+ install it
-then at cmd or powershell with adm
-+ pip install virtualenv
+- Open cmd or powershell with adm permisons
+- pip install virtualenv
 
-+ virtualenv {envname}
-to activate the virtual enviroment
-+ {envname}/scripts/activate
-then
-+ pip install -r requirements.pip
-after all its done,
-+ python manage.py runserver
+- move to thge folder where this project went clonned at cmd (or open cmd here)
+
+- virtualenv env #this create a virtual enviroment called 'env'
+
+- env/scripts/activate #to activate the virtual enviroment (deactivate to desactivate)
+
+- pip install -r requirements.pip #inside the (env)
+
+- python manage.py runserver 0.0.0.0:8000 # the 8000 is any number, unless you use my demo front
+
+demo front at: https://github.com/EduirBR/ConsumerAPIJsVanilla
