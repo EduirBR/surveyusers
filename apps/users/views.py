@@ -5,6 +5,3 @@ from apps.users.models import UserModel
 class UserView(ModelViewSet):
     serializer_class = UserSerializer
     queryset = UserModel.objects.all()
-
-
-
