@@ -16,6 +16,10 @@ A Simple API to show off a little practice of Python Django
 
 - pip install -r requirements.pip #inside the (env)
 
-- python manage.py runserver 0.0.0.0:8000 # the 8000 is any number, unless you use my demo front
+- python manage.py migrate (to build the tables inside the database)
+
+- python manage.py seedcountries (to set the countries inside the database)
+
+- python manage.py runserver 0.0.0.0:8000 (# the 8000 is any number, unless you use my demo front)
 
 demo front at: https://github.com/EduirBR/ConsumerAPIJsVanilla

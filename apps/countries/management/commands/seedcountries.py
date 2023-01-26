@@ -8,11 +8,11 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
 
-        with open('apps/countries/seeder/commands/.json') as file:
-            data = json.load(file)
-
-        for i in range(0, len(data["data"]), 1):
+        file = open('apps/countries/management/commands/countrymodel.json', encoding="utf8")
+        data = json.load(file)
+        
+        for i in range(0, len(data['data']), 1):
             countries_serializers = CountrySerializer(
-                data=data["data"][i])
+                data=data['data'][i])
             if countries_serializers.is_valid():
                 countries_serializers.save()

@@ -1,8 +1,3 @@
-BIOMES = (('forest','forest'),
-        ('beach','beach'),
-        ('mountains','mountains'),
-        ('desert','desert'),
-)
 COMPANIES_CHOISES =(
     ('alone','alone'),
     ('family','with family'),
