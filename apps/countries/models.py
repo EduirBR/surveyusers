@@ -12,4 +12,10 @@ class CountryModel(models.Model):
     currency = models.CharField(max_length=150, blank=True, verbose_name = 'Moneda')
     flagSVG = models.CharField(max_length=150)
     flagPNG = models.CharField(max_length=150)
+
+    class Meta:
+        ordering=['name',]
+
+    def __str__(self) -> str:
+        return self.name 
     

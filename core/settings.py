@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'apps.users',
     'apps.countries',
+    'apps.bioma',
 ]
 
 MIDDLEWARE = [
