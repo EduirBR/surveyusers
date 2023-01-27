@@ -1,5 +1,5 @@
-from rest_framework.viewsets import ReadOnlyModelViewSet
-from apps.countries.serializers import CountrySerializer, CountryHTMLSerializer
+from rest_framework.viewsets import ReadOnlyModelViewSet , ModelViewSet
+from apps.countries.serializers import CountrySerializer, CountryHTMLSerializer, CountryUserSerializer
 from apps.countries.models import CountryModel
 from rest_framework.response import Response
 
@@ -17,8 +17,12 @@ class CountriesViewSet(ReadOnlyModelViewSet):
             return Response(countries_serializer.data)
         return super().retrieve(request, *args, **kwargs)
 
-# class CHTMLViewSet(ReadOnlyModelViewSet):
-#     serializer_class = CountryHTMLSerializer
-#     queryset = CountryModel.objects.all()
+class CountryUserview(ReadOnlyModelViewSet):
+    
+    queryset = CountryModel.objects.all()
+    serializer_class = CountryUserSerializer
 
+    def list(self, request, *args, **kwargs):
+        print('hi')
+        return super().list(request, *args, **kwargs)
     
